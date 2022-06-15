@@ -1,0 +1,71 @@
+ <!DOCTYPE html>  
+ <html lang="en">  
+  <head>  
+   <meta charset="utf-8" />  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />  
+   <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" />   -->
+   <meta name="description" content="Simple Hangman Game" />  
+   <meta name="keywords" content="game, hangman, javascript" />  
+   <link rel="stylesheet" href="style.css" type="text/css" />  
+   <link  
+    href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&display=swap"  
+    rel="stylesheet"  
+   />  
+   <title>Hangman Game</title>  
+   
+  </head>  
+  <body>  
+   <main>  
+    <div id="container">  
+     <div id="title">Hangman</div>  
+     <div id="board">
+         <ul id = "word" class="word"></ul>
+     </div>  
+        <div id="hangman">
+            <svg class="figure">
+          
+            <line x1="25%" y1="5%" x2="65%" y2="5%" />
+            <line x1="65%" y1="5%" x2="65%" y2="20%" />
+            <line x1="25%" y1="5%" x2="25%" y2="95%" />
+            <line x1="5%" y1="95%" x2="45%" y2="95%" />
+
+         
+          <circle r="10%" cx="65%" cy="30%" class="body-part" />
+
+         
+          <line x1="65%" y1="40%" x2="65%" y2="60%" class="body-part" />
+
+         
+          <line x1="50%" y1="40%" x2="65%" y2="50%" class="body-part" />
+          <line x1="80%" y1="40%" x2="65%" y2="50%" class="body-part" />
+
+          <line x1="65%" y1="60%" x2="80%" y2="70%" class="body-part" />
+          <line x1="65%" y1="60%" x2="50%" y2="70%" class="body-part" />
+        </svg>
+        </div>  
+         <div id="alphabet">
+            <div class= "keyboard"></div>
+            <div class = "button-holder">
+            <button class="btn btn-primary" type="button" id="oimdb">
+             PLAY
+            </button>
+            </div> 
+         </div>  
+         <div id="lives"></div> 
+         <div id="backdrop" class="backdrop"></div>
+         <div id="final-msg" class="final-msg">
+          <p id="msg-info" class="msg-info"></p>
+          <button id="play" class="play">New Game</button>
+         </div>
+         <div class="fireworks">
+           <canvas id='myCanvas' width='800' height='800'></canvas>
+         </div>
+         <div class="indication">
+          <p>You have already entered this letter</p>
+        </div> 
+    </div> 
+   </main>  
+   <script src="script.js"></script>   
+  </body>  
+ </html>  
